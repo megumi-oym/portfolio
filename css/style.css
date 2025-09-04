@@ -365,6 +365,10 @@ img.btn_logo {
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+	max-width: 100%;
+}
+#g-logo img {
+	max-width: 100%;
 }
 /* モーダル */
 
@@ -697,6 +701,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
