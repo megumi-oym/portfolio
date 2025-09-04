@@ -17,6 +17,7 @@ img {
 body {
 	background: #fdfdf5;
 	outline: 3px solid #758a72;	
+	overflow-x: hidden;
 }
 
 .copy {
@@ -32,4 +33,5 @@ ul, ol {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;
+
 }
