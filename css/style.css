@@ -361,6 +361,10 @@ img.btn_logo {
 .gallery_wrapper{
 	background: #C3D8C0;
 }
+#g-logo {
+	display: flex;
+	justify-content: center;
+}
 /* モーダル */
 
 .thumbs {
@@ -692,6 +696,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
