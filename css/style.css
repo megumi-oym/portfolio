@@ -674,13 +674,13 @@ input[name="tab-menu"] {
   #sb-2 {
 		grid-template-columns: 80% auto;
   }
-  #gb_l {
+  #gb-l {
 		display: none;
   }
   #g-logo {
 		grid-column: 1;
   }
-  #gb_r{
+  #gb-r{
 		grid-column: 2;
   }
   .thumbs {
@@ -692,5 +692,6 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
