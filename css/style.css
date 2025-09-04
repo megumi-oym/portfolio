@@ -364,6 +364,7 @@ img.btn_logo {
 #g-logo {
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 /* モーダル */
 
@@ -684,9 +685,6 @@ input[name="tab-menu"] {
   #g-logo {
 		grid-column: 1;
   }
-  #g-logo img {
-	  object-fit: contain;
-  }
   #gb-r{
 		grid-column: 2;
   }
@@ -699,6 +697,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
