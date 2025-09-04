@@ -365,6 +365,7 @@ img.btn_logo {
 	display: flex;
 	justify-content: center;
 	max-width: 100%;
+	height: auto;
 }
 /* モーダル */
 
@@ -697,6 +698,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
