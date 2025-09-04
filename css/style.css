@@ -623,12 +623,12 @@ input[name="tab-menu"] {
     grid-column: 1;
     grid-row: 1;
   }
-	.guidance {
+  .guidance {
 		display: none;
-	}
-	.guidance.sub {
+  }
+  .guidance.sub {
 	display: flex;
-}
+  }
   .openbtn {
     grid-column: 2;
     grid-row: 1;
@@ -668,14 +668,27 @@ input[name="tab-menu"] {
   .logo {
     width: 50%;
   }
-	.hero .btn {
+  .hero .btn {
 		display: none;
-	}
+  }
+  .section_bar {
+	  grid-template-columns: 60% 1fr;
+  }
+  .box_l {
+	  display: none;
+  }
+  .section_logo {
+	  grid-column: 1;
+  }
+  .box_r {
+	  grid-column:2
+  }
   .thumbs {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
-	.about_wrapper {
+  .about_wrapper {
 		flex-direction: column;
 		align-items: center;
-	}
+  }
+
 }
