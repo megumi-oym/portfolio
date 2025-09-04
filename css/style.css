@@ -364,8 +364,6 @@ img.btn_logo {
 #g-logo {
 	display: flex;
 	justify-content: center;
-	max-width: 100%;
-	height: auto;
 }
 /* モーダル */
 
@@ -686,6 +684,9 @@ input[name="tab-menu"] {
   #g-logo {
 		grid-column: 1;
   }
+  #g-logo img {
+	  max-width: 80%;
+  }
   #gb-r{
 		grid-column: 2;
   }
@@ -698,6 +699,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
