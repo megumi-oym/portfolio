@@ -681,8 +681,9 @@ input[name="tab-menu"] {
 		display: none;
   }
   #sb-2 {
-		grid-template-columns: 80% auto;
-  }
+		grid-template-columns: 1fr auto;
+	  min-width: 0;
+  } 
   #gb-l {
 		display: none;
   }
@@ -701,6 +702,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
