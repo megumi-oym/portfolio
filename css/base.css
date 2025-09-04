@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	background: #fdfdf5;
+	outline: 3px solid #758a72;	
+}
+
+.copy {
+	color: #758a72;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}

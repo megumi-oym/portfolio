@@ -1,0 +1,681 @@
+@charset "utf-8";
+
+.home {
+  outline: 2px solid #758a72;
+  display: grid;
+  grid-template-columns: 300px auto 87px;
+  grid-template-rows: 87px auto;
+}
+.box {
+  background: #758a72;
+  grid-column: 1;
+  grid-row: 1;
+}
+.guidance_wrapper {
+  border-bottom: 2px solid #758a72;
+  grid-column: 2;
+  grid-row: 1;
+}
+.guidance {
+	display: flex;
+	justify-content: flex-end;
+	text-align: end;
+	margin-right: 10px; 
+}
+.guidance p {
+	  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+	font-size: 1.5rem;
+	color: #758A72;
+}
+.arrow {
+	display: inline-block;
+	border-style: solid;
+	border-width: 20px 10px 0 10px;
+	border-color: #758a72 transparent transparent transparent;
+}
+.guidance.sub {
+	display: none;
+}
+/* バーガー */
+.nav_box {
+  display: block;
+  position: static;
+}
+.openbtn {
+  border: 3px solid #758a72;
+  grid-column: 3;
+  grid-row: 1;
+  cursor: pointer;
+  background: #FFF36E;
+  position: fixed;
+  top: 5px;
+  right: 7px;
+  z-index: 998;
+  width: 90px;
+  height: 90px;
+  align-content: center;
+}
+.openbtn span {
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 22px;
+  height: 3px;
+  border-radius: 2px;
+  width: 50%;
+  background: #758a72;
+}
+.openbtn span:nth-of-type(1) {
+  top: 30px;
+}
+.openbtn span:nth-of-type(2) {
+  top: 40px;
+}
+.openbtn span:nth-of-type(3) {
+  top: 50px;
+}
+.openbtn.active span:nth-of-type(1) {
+  top: 30px;
+  left: 22px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+}
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn.active span:nth-of-type(3) {
+  top: 42px;
+  left: 22px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+}
+#g-nav.panelactive #g-nav-list {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+#g-nav ul {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#g-nav li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  opacity: 1;
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+#g-nav {
+  position: fixed;
+  z-index: 999;
+  top: 70px;
+  right: -120%;
+  width: 100%;
+  height: 50%;
+  background: #758a72;
+  transition: all 0.6s;
+  opacity: 80%;
+}
+#g-nav.panelactive {
+  right: 0;
+}
+/*  ヒーロー　*/
+.title {
+  border: none;
+  border-right: 2px solid #758a72;
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+}
+.logo {
+  width: 100%;
+  margin: 20px;
+}
+.hero {
+  grid-column: 2 / -1;
+  grid-row: 2;
+  position: relative;
+  border-bottom: 2px solid #758a72;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  inset: 0;
+  object-fit: contain;
+}
+.hero .btn {
+  position: absolute;
+  width: clamp(80px, 10vw, 220px);
+  animation: floaty 2s ease-in-out infinite;
+}
+img.btn_logo {
+  width: 100%;
+  height: auto;
+}
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.hero .creates {
+  top: 10%;
+  left: 10%;
+}
+.lit {
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+.btn.creates:hover ~ .lit {
+  opacity: 1;
+}
+.hero .gallery {
+  top: 22%;
+  left: 40%;
+}
+.cat_move {
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+.btn.gallery:hover ~ .cat_move {
+  opacity: 1;
+}
+.hero .about {
+  top: 40%;
+  left: 80%;
+}
+.eye_open {
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+.btn.about:hover ~ .eye_open {
+  opacity: 1;
+}
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+/* 二重線の設定 */
+.row {
+  outline: 2px solid #758a72;
+}
+.line-green {
+  background: #758a72;
+  color: #758a72;
+}
+.line-white {
+  color: #fdfdf5;
+}
+/* 共通部分 */
+.section_bar {
+  border-bottom: 2px solid #758a72;
+  display: grid;
+  grid-template-rows: clamp(64px, 10vw, 120px);
+}
+.box_l {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: stretch;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  border-top: 2px solid #758a72;
+}
+.box_r {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: stretch;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  border-top: 2px solid #758a72;
+}
+/* ここからcreates */
+.work .section_bar {
+  grid-template-columns: 20% 1fr 40%;
+}
+.work .box_l {
+  background-image: url("../images/dot.png");
+}
+.work .box_r {
+  background-image: url("../images/dot.png");
+}
+.section_logo {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-left: 2px solid #758a72;
+  border-right: 2px solid #758a72;
+}
+.creates_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: row dense;
+  gap: 16px;
+  align-items: center;
+  font-family: "Kiwi Maru", serif;
+  box-sizing: border-box;
+	background: #E8FDE5;
+}
+.creates_item {
+  border: 2px solid #758a72;
+}
+.creates_item:nth-child(1) {
+  margin: 2rem 0 2rem;
+}
+.creates_item:nth-child(2) {
+  margin: 4rem 0 2rem;
+}
+.creates_item:nth-child(3) {
+  margin: 1rem 0 2rem;
+}
+.card_header {
+  display: flex;
+  flex-wrap: wrap;
+	background: #FDFDF5;
+}
+.card_title {
+  padding: 0 0 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  order: 1;
+  text-decoration: none;
+	font-family:'Arial', 'Helvetica', sans-serif;
+	letter-spacing: 0.1rem;
+}
+.card_thumbnail {
+  margin: .3rem 0;
+  padding-bottom: .3rem;
+  order: 0;
+  border-bottom: 1px solid #758A72;
+}
+.card_image {
+  width: 100%;
+}
+.card_body {
+  padding: 0 1.5rem;
+  background-color: #758A72;
+}
+.card_desc {
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+.card_link {
+  font-size: .8rem;
+  margin-top: 0;
+  text-align: center;
+}
+.card_desc + .card_link {
+  margin-top: .5rem;
+}
+.card_footer {
+  padding: 1rem;
+  background-color: #758A72;
+}
+.card_btn {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  background-color: #FFF36E;
+  color: #758A72;
+  border-radius: .25rem;
+  font-weight: bold;
+}
+.card_btn:hover, .card_btn:focus {
+  background-color: #F4AD7A;
+}
+.announce {
+	font-family: "Kiwi Maru", serif;
+	background: #E8FDE5;
+}
+/* ここからgallery */
+.section_gallery .section_bar {
+  grid-template-columns: 30% 1fr 30%;
+}
+.section_gallery .box_l {
+  background-image: url("../images/dia.png")
+}
+.section_gallery .box_r {
+  background-image: url("../images/dia.png");
+  transform: scaleX(-1);
+}
+.gallery_wrapper{
+	background: #C3D8C0;
+}
+/* モーダル */
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  align-items: flex-end;
+  padding: 0;
+  align-content: flex-start;
+  animation: floaty 2s ease-in-out infinite;
+}
+.thumb {
+  background: #FDFDF5;
+  border: 2px solid #FFF36E;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.thumb:hover {
+	transform: rotate(-5deg);
+	transition: transform 0.2 ease;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #758A72;
+  border-radius: 4px;
+  padding: 0;
+}
+.thumb figure {
+  margin: 5%;
+  width: 100%;
+}
+.thumb figcaption {
+  font-size: .95rem;
+  letter-spacing: 0.2em;
+  color: #333;
+  text-align: start;
+  margin-top: 0.5rem;
+}
+dialog#viewer {
+  position: fixed;
+  place-items: center;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, .5);
+}
+.v-panel {
+  width: min(860px, 92vw);
+  max-height: min(90vh, 900px);
+  margin: auto;
+  background: #fff;
+  border: 3px solid #758A72;
+  border-radius: 18px;
+  padding: 20px 20px 28px;
+  box-shadow: 0 10px 40px rbga(0, 0, 0, .2);
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+#v-title {
+  font-size: clamp(24px, 3.6vw, 40px);
+  margin: 6px 0 8px;
+}
+.v-hero {
+  margin: 6px 0 18px
+}
+#v-main {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+.v-subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 0 0 18px;
+}
+.v-subgrid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.v-desc {
+  line-height: 1.9;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+#viewer .close {
+  position: sticky;
+  top: 0;
+  float: right;
+  transform: translate(8px, -8px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #758A72;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#viewer {
+  position: relative;
+}
+#viewer p {
+  margin: .5rem 0 0;
+  padding: .2rem;
+  color: #333;
+  text-align: center;
+  background: #fdfdf5;
+}
+/* ここからabout */
+.section_about .section_bar {
+  grid-template-columns: 40% 1fr 20%;
+}
+.section_about .box_l {
+  background-image: url("../images/tri.png");
+}
+.section_about .box_r {
+  background-image: url("../images/tri.png");
+}
+.about_wrapper {
+  display: flex;
+  justify-content: center;
+  background: #E8FDE5;
+}
+.tab_contents_box {
+  width: clamp(280px, 48vw, 520px);
+  margin: 30px 0;
+}
+.tab-menu {
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  width: clamp(80px, 3.6vw, 120px);
+  margin: 0;
+  line-height: 36px;
+  text-align: center;
+  transition: all .2s ease;
+  border: 2px solid #758A72;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  background-color: #758A72;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.tab-menu:hover {
+  color: #F4AD7A;
+}
+.tab-menu:first-of-type {
+  margin: 0 5px 0 20px;
+}
+input:checked + .tab-menu {
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
+}
+input[name="tab-menu"] {
+  display: none;
+}
+.tab_content {
+  display: none;
+  z-index: 1;
+  clear: both;
+  border: 2px solid #758A72;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 0;
+  position: relative;
+  top: -2px;
+  background-color: #fff;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5;
+  box-sizing: border-box;
+  min-height: 180px;
+}
+#career:checked ~ #career_content {
+  display: block;
+}
+#skill:checked ~ #skill_content {
+  display: block;
+}
+/* チャート */
+.bar-chart {
+  font-size: .9em;
+  width: 100%;
+}
+.bar-chart > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.bar-chart dt {
+  width: 30%;
+  min-width: 55px;
+}
+.bar-chart dd {
+  width: 70%;
+  margin: 0;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+.bar-chart span {
+  display: inline-block;
+  padding-right: 15px;
+  border-radius: inherit;
+  background-color: #FFBA6E;
+  color: #758A72;
+  line-height: 45px;
+  text-align: right;
+  white-space: nowrap;
+  animation: anima-bar-chart 1.2s ease;
+}
+@keyframes anima-bar-chart {
+  from {
+    width: 0;
+  }
+}
+/* ここまでチャート */
+.self-portrait img {
+  width: clamp(250px, 28vw, 380px);
+  height: auto;
+	margin: 30px 0;
+}
+.return_top {
+	display: flex;
+	justify-content: center;
+}
+.triangle {
+	display: inline-block;
+	border-style: solid;
+	border-width: 0 14px 24px 14px;
+	border-color: transparent transparent #F4AD7A transparent;
+}
+/* レスポンシブ */
+@media (max-width: 960px) {
+  .thumbs {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 732px) {
+  .home {
+    grid-template-columns: auto 64px;
+    grid-template-rows: 64px auto auto;
+  }
+  .box {
+    background: #758a72;
+    grid-column: 1;
+    grid-row: 1;
+  }
+	.guidance {
+		display: none;
+	}
+	.guidance.sub {
+	display: flex;
+}
+  .openbtn {
+    grid-column: 2;
+    grid-row: 1;
+    width: 66px;
+    height: 66px;
+  }
+  .openbtn span:nth-of-type(1) {
+    top: 20px;
+    left: 16px;
+  }
+  .openbtn span:nth-of-type(2) {
+    top: 30px;
+    left: 16px;
+  }
+  .openbtn span:nth-of-type(3) {
+    top: 40px;
+    left: 16px;
+  }
+  .openbtn.active span:nth-of-type(1) {
+    top: 24px;
+    left: 16px;
+  }
+  .openbtn.active span:nth-of-type(3) {
+    top: 36px;
+    left: 16px;
+  }
+  .title {
+    border: none;
+    border-bottom: 2px solid #758a72;
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .hero {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  .logo {
+    width: 50%;
+  }
+	.hero .btn {
+		display: none;
+	}
+  .thumbs {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+	.about_wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+}
