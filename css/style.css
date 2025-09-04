@@ -671,6 +671,18 @@ input[name="tab-menu"] {
   .hero .btn {
 		display: none;
   }
+  #sb-2 {
+		grid-template-columns: 80% auto;
+  }
+  #gb_l {
+		display: none;
+  }
+  #g-logo {
+		grid-column: 1;
+  }
+  #gb_r{
+		grid-column: 2;
+  }
   .thumbs {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
@@ -680,4 +692,5 @@ input[name="tab-menu"] {
   }
 
 }
+
 
