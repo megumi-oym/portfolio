@@ -683,6 +683,7 @@ input[name="tab-menu"] {
   }
   #g-logo {
 		grid-column: 1;
+	  display: block;
   }
   #g-logo img {
 	  max-width: 80%;
@@ -699,6 +700,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
