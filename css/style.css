@@ -249,7 +249,7 @@ img.btn_logo {
 }
 /* ここからcreates */
 .work .section_bar {
-  grid-template-columns: 20% 1fr 40%;
+  grid-template-columns: 20% minmax(0, 1fr) 40%;
 }
 .work .box_l {
   background-image: url("../images/dot.png");
@@ -349,7 +349,7 @@ img.btn_logo {
 }
 /* ここからgallery */
 .section_gallery .section_bar {
-  grid-template-columns: 30% 1fr 30%;
+  grid-template-columns: 20% minmax(0, 1fr) 20%;
 }
 .section_gallery .box_l {
   background-image: url("../images/dia.png")
@@ -484,7 +484,7 @@ dialog::backdrop {
 }
 /* ここからabout */
 .section_about .section_bar {
-  grid-template-columns: 40% 1fr 20%;
+  grid-template-columns: 40% minmax(0, 1fr) 20%;
 }
 .section_about .box_l {
   background-image: url("../images/tri.png");
@@ -671,18 +671,6 @@ input[name="tab-menu"] {
   .hero .btn {
 		display: none;
   }
-  .section_bar {
-	  grid-template-columns: 60% 1fr;
-  }
-  .box_l {
-	  display: none;
-  }
-  .section_logo {
-	  grid-column: 1;
-  }
-  .box_r {
-	  grid-column:2
-  }
   .thumbs {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
@@ -692,3 +680,4 @@ input[name="tab-menu"] {
   }
 
 }
+
