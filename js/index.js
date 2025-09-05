@@ -83,7 +83,7 @@ function initSectionAnim() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".logo",
-      start: "top 80%",
+      start: "top 90%",
       once: true
     }
   });
@@ -114,7 +114,7 @@ function initSectionAnim2() {
 	const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lg-1",
-      start: "top 80%",
+      start: "top 90%",
       once: true
     }
   });
@@ -145,7 +145,7 @@ function initSectionAnim3() {
 	const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#lg-2",
-      start: "top 80%",
+      start: "top 90%",
       once: true
     }
   });
@@ -220,3 +220,4 @@ function initSectionAnim4() {
   });
 
 document.querySelector('.about_wrapper').style.gridTemplateColumns = '1fr'
+
