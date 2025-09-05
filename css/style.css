@@ -498,7 +498,7 @@ dialog::backdrop {
   background: #E8FDE5;
 }
 .tab_contents_box {
-  width: clamp(280px, 48vw, 520px);
+  width: clamp(400px, 48vw, 520px);
   margin: 30px 0;
 }
 .tab-menu {
@@ -672,7 +672,7 @@ input[name="tab-menu"] {
 		display: none;
   }
   #sb-2 {
-		grid-template-columns: 1fr auto;
+		grid-template-columns: 2fr 1fr;
 	  min-width: 0;
   } 
   #gb-l {
@@ -693,6 +693,7 @@ input[name="tab-menu"] {
   }
 
 }
+
 
 
 
